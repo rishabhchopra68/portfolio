@@ -1,0 +1,25 @@
+.intro-container {
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.profile-pic-container {
+    width: max-content;
+}
+#profile-pic {
+    border-radius: 50%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.intro-heading-container{
+    text-align: center;
+}
+
+#intro-heading {
+    font-weight: 900;
+    color: white;
+    font-size: 5em;
+}
