@@ -6,7 +6,7 @@ export default function Testimonials() {
       className="testimonials"
       id="testimonials"  
     >
-        
+      <h1>Testimonials</h1>
     </div>
   );
 }

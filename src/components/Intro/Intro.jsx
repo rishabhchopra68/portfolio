@@ -12,7 +12,7 @@ export default function Intro() {
       </div>
       <div className="intro-heading-container">
         <p id="intro-heading">
-          Frontend Web Developer
+          "Frontend Web Developer"
         </p>
       </div>
     </div>

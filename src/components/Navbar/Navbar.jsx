@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import "./navbar.scss";
-import { Person } from '@mui/icons-material';
+import Button from "../Button";
+
 
 export default function Navbar() {
   return (
@@ -7,13 +10,25 @@ export default function Navbar() {
       className="navbar"
       id="navbar"
     >
-        <div className="wrapper">
+        <div className="navbar-wrapper">
           <div className="left">
-            <a href="#works">Postfolio</a>
-            <Person></Person>
+          <HashLink to="/#intro">
+              <Button>Home</Button>
+          </HashLink>
           </div>
           <div className="right">
-             
+            <HashLink to="/#about">
+              <Button>About</Button>
+            </HashLink>
+            <HashLink to="/#work">
+              <Button>Work</Button>
+            </HashLink>
+            <HashLink to="/#testimonials">
+              <Button>Testimonials</Button>
+            </HashLink>
+            <HashLink to="/#contact">
+              <Button>Contact</Button>
+            </HashLink>
           </div>
         </div>
     </div>

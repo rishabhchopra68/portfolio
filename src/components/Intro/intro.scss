@@ -9,9 +9,10 @@
     width: max-content;
 }
 #profile-pic {
-    border-radius: 50%;
+    border-radius: 45%;
     max-width: 400px;
     max-height: 400px;
+    animation: 0.6s normal 0s 1 borderRadius;
 }
 
 .intro-heading-container{
@@ -22,4 +23,28 @@
     font-weight: 900;
     color: white;
     font-size: 5em;
+    animation: 0.6s normal 0s 1 slideInFromLeft;
+    
+    transform: scale(0.95);
+    width: max-content;
+}
+
+#intro-heading:hover {
+    transform: scale(1);
+    color:grey
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-50%) scale(0.5);
+    }
+    100% {
+      transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes borderRadius {
+    0% {
+      border-radius: 50%;
+    }
 }
