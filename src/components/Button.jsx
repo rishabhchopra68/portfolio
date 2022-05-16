@@ -15,7 +15,6 @@ const Button = styled.button`
         transition-delay:0.1s;
         background-color: black;
         color: white;
-        font-weight: 900;
     }
 `
 

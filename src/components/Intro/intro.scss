@@ -2,36 +2,52 @@
     background-color: lightsalmon;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     align-items: center;
 }
 .profile-pic-container {
-    width: max-content;
+    display: flex;
+    width: 40%;
+    justify-content: center;
 }
 #profile-pic {
-    border-radius: 45%;
+    border-radius: 20%;
     max-width: 400px;
     max-height: 400px;
-    animation: 0.6s normal 0s 1 borderRadius;
+    animation: 0.8s normal 0s 1 borderRadius;
 }
 
 .intro-heading-container{
+    display: flex;
+    width: 60%;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 }
 
 #intro-heading {
     font-weight: 900;
     color: white;
-    font-size: 5em;
-    animation: 0.6s normal 0s 1 slideInFromLeft;
-    
-    transform: scale(0.95);
+    font-size: 5vw;
+    animation: 0.8s normal 0s 1 slideInFromLeft;
+    transform: scale(0.9);
     width: max-content;
 }
 
 #intro-heading:hover {
     transform: scale(1);
     color:grey
+}
+
+.about-text {
+    font-family: cursive;
+    color: black;
+    font-size: 2em;
+    opacity: 0.8;
+}
+
+.about-text:hover {
+    opacity: 1;
 }
 
 @keyframes slideInFromLeft {
