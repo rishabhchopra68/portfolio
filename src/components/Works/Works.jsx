@@ -1,12 +1,11 @@
 import { useContext } from "react";
 import "./works.scss";
 
-import Card from "../Card/Card";
 import { PortfolioContext } from "./../../context/PortfolioContext";
+import Card from "../Card/Card";
 
 export default function Works() {
   const { projects } = useContext(PortfolioContext);
-  console.log(projects);
 
   return (
     <div className="work" id="work">
@@ -14,11 +13,11 @@ export default function Works() {
       <div className="works-container">
         {projects.map((project) => (
           <Card
-            key={project.name}
+            codelink={project.codelink}
             image={project.image}
+            key={project.name}
             name={project.name}
             projectlink={project.projectlink}
-            codelink={project.codelink}
           />
         ))}
       </div>

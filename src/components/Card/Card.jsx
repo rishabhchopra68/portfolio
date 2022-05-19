@@ -9,15 +9,17 @@ const Card = (props) => {
     <div className="card-container">
       <div className="project-name">{name}</div>
       <img className="project-image" src={image} alt="Profile" />
-      <a
-        className="project-link"
-        href={projectlink}
-        rel="noreferrer"
-        target="_blank"
-      >
-        <LaptopIcon fontSize="small" className="project-icon" />
-        View Project
-      </a>
+      {projectlink ? (
+        <a
+          className="project-link"
+          href={projectlink}
+          rel="noreferrer"
+          target="_blank"
+        >
+          <LaptopIcon fontSize="small" className="project-icon" />
+          View Project
+        </a>
+      ) : null}
       <a className="code-link" href={codelink} target="_blank" rel="noreferrer">
         <GitHubIcon fontSize="small" className="project-icon" />
         Code Repository
