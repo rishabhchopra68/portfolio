@@ -25,7 +25,9 @@
     font-weight: 900;
     font-family: cursive;
 }
-.project-link,.code-link{
+
+.project-link,
+.code-link {
     margin-top: 5px;
     height: auto;
     font-weight: 700;
@@ -36,15 +38,63 @@
 
 }
 
-.project-link:hover,.code-link:hover{
+.project-link:hover,
+.code-link:hover {
     color: blue;
 }
 
-.project-image {
+.project-image-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
     height: 70%;
     width: 100%;
 }
 
+.project-image {
+    height: 100%;
+    width: 100%;
+}
+
+.project-image-description {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.project-image:hover {
+    animation: 0.8s normal 0s 1 slideOutFromRight;
+}
+
+.project-image-description:not(:hover) {
+    animation: 0.8s normal 0s 1 slideOutFromLeft;
+}
+
 .project-icon {
     margin-right: 5px;
+}
+
+
+@keyframes slideOutFromRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideOutFromLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }

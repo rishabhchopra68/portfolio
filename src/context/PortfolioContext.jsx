@@ -3,6 +3,7 @@ import TodoList from "../images/projects/TodoList.PNG";
 import Clock from "../images/projects/Clock.PNG";
 import Portfolio from "../images/projects/Portfolio.PNG";
 import Quiz from "../images/projects/Quiz.PNG";
+import SearchBar from "../images/projects/SearchBar.PNG";
 
 export const PortfolioContext = createContext(null);
 
@@ -25,6 +26,12 @@ const PortfolioContextProvider = ({ children }) => {
       image: Clock,
       projectlink: "https://clock-ashen.vercel.app/",
       codelink: "https://github.com/rishabhchopra68/clock/tree/main",
+    },
+    {
+      name: "Search bar",
+      image: SearchBar,
+      projectlink: "https://search-bar-tan.vercel.app/",
+      codelink: "https://github.com/rishabhchopra68/search-bar",
     },
     {
       name: "Portfolio",
