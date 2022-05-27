@@ -10,6 +10,7 @@
     padding: 10px;
     background-color: lightgrey;
     border: 2px solid;
+    border-radius: 10px;
 }
 
 .card-container:hover {
@@ -70,10 +71,6 @@
     animation: 0.8s normal 0s 1 slideOutFromRight;
 }
 
-.project-image-description:not(:hover) {
-    animation: 0.8s normal 0s 1 slideOutFromLeft;
-}
-
 .project-icon {
     margin-right: 5px;
 }
@@ -86,15 +83,5 @@
 
     100% {
         transform: translateX(100%);
-    }
-}
-
-@keyframes slideOutFromLeft {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
     }
 }

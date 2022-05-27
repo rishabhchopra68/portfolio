@@ -1,5 +1,6 @@
 @import "../../global.scss";
 
+
 .navbar {
     background-color: white;
     color: $mainColor;
@@ -8,12 +9,13 @@
     top: 0;
     width: 100%;
     z-index: 2;
-} 
+}
 
 .navbar-wrapper {
     display: flex;
     height: inherit;
     justify-content: space-between;
+    border: 2px dotted black;
 }
 
 .left {
@@ -34,9 +36,10 @@
 
 @keyframes slideInFromTop {
     0% {
-      transform: translateY(-100%);
+        transform: translateY(-100%);
     }
+
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
 }

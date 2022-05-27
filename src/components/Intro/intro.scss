@@ -5,19 +5,22 @@
     // flex-wrap: wrap;
     align-items: center;
 }
+
 .profile-pic-container {
     display: flex;
     width: 40%;
     justify-content: center;
 }
+
 #profile-pic {
     border-radius: 20%;
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 350px;
+    max-height: 350px;
     animation: 0.8s normal 0s 1 borderRadius;
+    border: 2px dotted black;
 }
 
-.intro-heading-container{
+.intro-heading-container {
     display: flex;
     width: 60%;
     align-items: center;
@@ -36,7 +39,7 @@
 
 #intro-heading:hover {
     transform: scale(1);
-    color:grey
+    color: grey
 }
 
 .about-text {
@@ -52,15 +55,16 @@
 
 @keyframes slideInFromLeft {
     0% {
-      transform: translateX(-50%) scale(0.5);
+        transform: translateX(-50%) scale(0.5);
     }
+
     100% {
-      transform: translateX(0) scale(1);
+        transform: translateX(0) scale(1);
     }
 }
 
 @keyframes borderRadius {
     0% {
-      border-radius: 50%;
+        border-radius: 50%;
     }
 }

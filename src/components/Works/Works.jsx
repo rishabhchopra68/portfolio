@@ -9,7 +9,7 @@ export default function Works() {
 
   return (
     <div className="work" id="work">
-      <h1>Sample Work</h1>
+      <div className="works-heading">Sample Work</div>
       <div className="works-container">
         {projects.map((project) => (
           <Card

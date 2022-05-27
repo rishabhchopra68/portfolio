@@ -17,7 +17,7 @@ export default function Navbar() {
         </div>
         <div className="right">
           <HashLink to="/#work">
-            <Button>Work</Button>
+            <Button>{"<Work />"}</Button>
           </HashLink>
           <HashLink to="/#testimonials">
             <Button>Testimonials</Button>
