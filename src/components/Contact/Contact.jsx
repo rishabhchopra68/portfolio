@@ -3,6 +3,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import CodeIcon from "@mui/icons-material/Code";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 export default function Contact() {
   return (
@@ -36,6 +37,17 @@ export default function Contact() {
           >
             <CodeIcon fontSize="large" />
             Leetcode Profile
+          </a>
+        </div>
+        <div className="contact-card-info">
+          <a
+            href="https://www.linkedin.com/in/rishabh-chopra-5949a5153/"
+            id="linkedin-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedInIcon fontSize="large" />
+            Linkedin Profile
           </a>
         </div>
       </div>
